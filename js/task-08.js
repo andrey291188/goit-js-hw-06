@@ -2,7 +2,7 @@
 const formLoginElement = document.querySelector(".login-form")
 
 formLoginElement.addEventListener("submit", formSubmit)
-console.log(formLoginElement)
+
 function formSubmit (event) {
   event.preventDefault();
 
@@ -16,6 +16,6 @@ function formSubmit (event) {
     userPassword: password.value,
    }
     console.log(data)
+    formLoginElement.reset()
   }
-  return formLoginElement.reset()
 }
